@@ -1,0 +1,84 @@
+Android Flashlight Code
+
+Extract from AndroidManifest.xml using aapt
+
+N: android=http://schemas.android.com/apk/res/android
+  E: manifest (line=2)
+    A: android:versionCode(0x0101021b)=(type 0x10)0xbfba66d
+    A: android:versionName(0x0101021c)="2.1.2114212534.41517" (Raw: "2.1.2114212534.41517")
+    A: package="com.htc.flashlight" (Raw: "com.htc.flashlight")
+    E: application (line=6)
+      A: android:label(0x01010001)=@0x7f040000
+      A: android:icon(0x01010002)=@0x7f020006
+      A: android:description(0x01010020)=@0x20c00ba
+      A: allowSkinChange=(type 0x12)0xffffffff (Raw: "true")
+      E: activity (line=13)
+        A: android:theme(0x01010000)=@0x7f050000
+        A: android:label(0x01010001)=@0x7f040000
+        A: android:name(0x01010003)=".FlashlightActivity" (Raw: ".FlashlightActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+        A: android:configChanges(0x0101001f)=(type 0x11)0xe0
+        E: intent-filter (line=18)
+          E: action (line=19)
+            A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+          E: category (line=20)
+            A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+    E: uses-sdk (line=25)
+      A: android:minSdkVersion(0x0101020c)=(type 0x10)0x5
+      A: android:targetSdkVersion(0x01010270)=(type 0x10)0xa
+    E: uses-permission (line=26)
+      A: android:name(0x01010003)="android.permission.WAKE_LOCK" (Raw: "android.permission.WAKE_LOCK")
+
+
+Extract from res/layout/main.xml using aapt:
+
+N: android=http://schemas.android.com/apk/res/android
+  E: AbsoluteLayout (line=2)
+    A: android:windowNoTitle(0x01010056)=(type 0x12)0xffffffff
+    A: android:orientation(0x010100c4)=(type 0x10)0x1
+    A: android:id(0x010100d0)=@0x7f060000
+    A: android:layout_width(0x010100f4)=(type 0x10)0xffffffff
+    A: android:layout_height(0x010100f5)=(type 0x10)0xffffffff
+    E: ImageView (line=9)
+      A: android:id(0x010100d0)=@0x7f060001
+      A: android:layout_width(0x010100f4)=(type 0x10)0xfffffffe
+      A: android:layout_height(0x010100f5)=(type 0x10)0xfffffffe
+      A: android:src(0x01010119)=@0x7f020001
+      A: android:layout_x(0x0101017f)=(type 0x5)0x0
+      A: android:layout_y(0x01010180)=(type 0x5)0x0
+    E: ImageView (line=16)
+      A: android:id(0x010100d0)=@0x7f060002
+      A: android:layout_width(0x010100f4)=(type 0x10)0xfffffffe
+      A: android:layout_height(0x010100f5)=(type 0x10)0xfffffffe
+      A: android:src(0x01010119)=@0x7f020007
+      A: android:layout_x(0x0101017f)=(type 0x5)0x1a400
+      A: android:layout_y(0x01010180)=(type 0x5)0x1000
+    E: ImageView (line=23)
+      A: android:id(0x010100d0)=@0x7f060003
+      A: android:layout_width(0x010100f4)=(type 0x5)0x8c00
+      A: android:layout_height(0x010100f5)=(type 0x5)0x8c00
+      A: android:layout_x(0x0101017f)=(type 0x5)0xaa00
+      A: android:layout_y(0x01010180)=(type 0x5)0x18c00
+    E: View (line=32)
+      A: android:id(0x010100d0)=@0x7f060004
+      A: android:background(0x010100d4)=@0x7f02000b
+      A: android:layout_width(0x010100f4)=(type 0x5)0x1d000
+      A: android:layout_height(0x010100f5)=(type 0x5)0x11600
+      A: android:layout_x(0x0101017f)=(type 0x5)0xc00
+      A: android:layout_y(0x01010180)=(type 0x5)0x1e600
+    E: TextView (line=39)
+      A: android:textSize(0x01010095)=(type 0x5)0x1400
+      A: android:textColor(0x01010098)=(type 0x1c)0xffffffff
+      A: android:gravity(0x010100af)=(type 0x11)0x3
+      A: android:id(0x010100d0)=@0x7f060005
+      A: android:paddingLeft(0x010100d6)=(type 0x5)0x1500
+      A: android:paddingTop(0x010100d7)=(type 0x5)0x1200
+      A: android:paddingRight(0x010100d8)=(type 0x5)0x2300
+      A: android:paddingBottom(0x010100d9)=(type 0x5)0x1200
+      A: android:layout_width(0x010100f4)=(type 0x5)0x19000
+      A: android:layout_height(0x010100f5)=(type 0x10)0xfffffffe
+      A: android:text(0x0101014f)=@0x7f040006
+      A: android:layout_x(0x0101017f)=(type 0x5)0x1600
+      A: android:layout_y(0x01010180)=(type 0x5)0x1f000
+
+
